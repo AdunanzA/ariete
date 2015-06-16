@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>ftp://evolution.adunanza.net:91/web_root/evolution/MyFastHackPage/|ftp://evolution.adunanza.net:91/web_root/evolution/MyfastHackPage/|ftp://evolution.adunanza.net:91/MyfastHackPage/|ftp://hive.adunanza.net:41/MyfastHackPage/|ftp://evolution.adunanza.net:41/MyfastHackPage/</PublishUrlHistory>
+    <InstallUrlHistory>http://evolution.adunanza.net/MyFastHackPage/|http://evolution.adunanza.net/MyfastHackPage/</InstallUrlHistory>
+    <SupportUrlHistory>http://forum.adunanza.net/forums/164-Rilevamento-filtri-anti-p2p-Laboratorio</SupportUrlHistory>
+    <UpdateUrlHistory />
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+</Project>

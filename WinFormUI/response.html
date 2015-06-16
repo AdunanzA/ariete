@@ -1,0 +1,415 @@
+<html>
+<head>
+	<title>Configurazione PortMapping</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	
+	<!-------------------------------- JAVASCRIPT --------------------------------->
+	<script language="javaScript" src="../../templates/common/jss/function.js"></script>
+	<script language="javaScript" src="../../templates/common/jss/popup.js"></script>
+	<script language="javaScript" src="../../templates/common/jss/draglayer.js"></script>
+	<script language="javaScript" src="http://fastmomi.fastweb.it/lib/ajax/prototype.lite.js"></script>
+	<script language="javaScript" src="http://fastmomi.fastweb.it/lib/ajax/ajax.js"></script>
+	<script language="javaScript" src="../../templates/cfg-ngrg/jss/function.js"></script>
+	
+	<!------------------------- CSS RICHIESTI -------------------------->
+	<link href="../../templates/common/style/styleEXT.css" rel="stylesheet" type="text/css">
+	<script language="javascript">
+	//var browser = new BrowserDetect();
+	if ( navigator.appName.indexOf("Microsoft")!=-1 ) 
+		document.write('<link rel="stylesheet" type="text/css" href="../../templates/common/style/style_NEW_explorer.css" />');
+	else 
+		document.write('<link rel="stylesheet" type="text/css" href="../../templates/common/style/style_NEW_netscape.css" />');
+	</script>
+	<div id="root" style="display: none;"></div>
+</head>
+
+<!--body onLoad="getElem('loading').style.visibility = 'hidden'; "-->
+<body onLoad="">
+
+<div class="testata">
+	<div class="logo">&nbsp;</div>
+</div>
+
+<script>getWindowSize();</script>
+
+<div style="height: 90%;">
+
+<script>getInternoH();</script><div id="pagina" class="pagina" align="center">
+	<form name="FORM1" id="FORM1" method="POST" action="RES-Bought.php">
+	<input name="current" type="hidden" id="current" value="3">
+	<input name="step" type="hidden" id="step" value="3">
+	<input name="ctrl" type="hidden" id="ctrl" value="">
+	<input name="ipCpe" type="hidden" id="ipCpe" value="10.45.43.222">
+	<select id="ip_mac" name="ip_mac" style="display:none"> 
+		<option label="4c:ed:de:e8:7e:73" value="192.168.1.129">4c:ed:de:e8:7e:73</option>
+<option label="04:f7:e4:b6:0a:fb" value="192.168.1.130">04:f7:e4:b6:0a:fb</option>
+<option label="7c:61:93:ef:22:06" value="192.168.1.131">7c:61:93:ef:22:06</option>
+	
+	</select>
+	<a href="#" name="focus_popup" id="focus_popup"></a>
+
+<!-- INIZIO MENU NAVIGAZIONE -->
+<!-- FINE MENU NAVIGAZIONE -->
+	
+<input type="hidden" name="channel" value="MYFP">
+<input type="hidden" name="account" value="3871035">
+<input type="hidden" name="username" value="antonello.mereu0001">
+<input type="hidden" name="service" value="cfg-ngrg">
+<input type="hidden" name="actionid" value="">
+<input type="hidden" name="status" value="Bought">
+<input type="hidden" name="segmento" value="RES">
+<input type="hidden" name="selcode" value="DR.4006.0101MI">
+<input type="hidden" name="origin" value="cfg-ngrg">
+<input type="hidden" name="checksum" value="6b3c4b650bbe83eeba79b60a45d7960d">
+<input type="hidden" name="identifycode" value="93.50.105.220">
+<input type="hidden" name="previous" value="2">
+<!-- ############### OGGETTO ARBITRARY VARS ######################## //-->
+<input type="hidden" name="aVarsParam" value="">
+	<!---------------------------------------------------------------------->
+	<p class="titolo_tab">Configurazione PortMapping</p>
+	
+	
+	<table cellpadding="0" cellspacing="0" border="0" class="pagina_esterna">
+		  <tr>
+	    <td>
+
+			<!----------------------------------------------------------------------------------------------------------->
+			
+			<table width="413" border="0" align="left">
+				<tr height="25" valign="center" style="text-align:center;font-weight:bold">
+				<td width="200px" style="border:1px solid black;background:white;color:orange">PC Presenti in LAN</td>
+				<td width="10px">&nbsp;</td>
+				<td width="200px" style="border:1px solid black;background:orange;color:white" >Server Virtuali</td>
+				</tr>
+			</table>
+			<div style="clear:both"></div>
+			<div style="overflow:auto;height:270px;">
+			
+			<table class="pagina_interna" border="0">
+				<table width="860" style="cellspacing:5px">
+				<thead>
+				<tr >
+					<th colspan='9' width="840"><div id="div_conthelp" style="visibility:hidden;height:25px;width:800px:text-align:center;background-color : orange;color:white;font-weight:normal;font-size:9px">&nbsp;</div></th>
+				</tr>
+				<tr >
+				<th style="background:#D2D2D2;color:white" onmouseover="showContextHelp(1)" onmouseout="hideContextHelp()"><u>ID</u></th>
+				<th style="background:#D2D2D2;color:white" onmouseover="showContextHelp(2)" onmouseout="hideContextHelp()"><u>IP</u></th>
+				<th style="background:#D2D2D2;color:white" onmouseover="showContextHelp(3)" onmouseout="hideContextHelp()"><u>Mac Address</u></th>
+				<th style="background:#D2D2D2;color:white" onmouseover="showContextHelp(4)" onmouseout="hideContextHelp()"><u>Descrizione</u></th>
+				<th style="background:#D2D2D2;color:white" onmouseover="showContextHelp(5)" onmouseout="hideContextHelp()"><u>Protoc.</u></th>
+				<th style="background:#D2D2D2;color:white" onmouseover="showContextHelp(6)" onmouseout="hideContextHelp()"><u>LAN</u></th>
+				<th style="background:#D2D2D2;color:white" onmouseover="showContextHelp(7)" onmouseout="hideContextHelp()"><u>WAN</u></th>
+				<th style="background:#D2D2D2;color:white" onmouseover="showContextHelp(8)" onmouseout="hideContextHelp()"><u>Stato PC</u></th>
+				<th style="background:#D2D2D2;color:white" ><a href="javascript:void(removeAllItems());">Rimuovi Tutti</a></th>
+				</tr>
+				</thead>
+				<tbody>
+				
+								<tr>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_ID_1" 				name="pmitem_ID[]" 			value="1"/>1</td>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_IP_1" 				name="pmitem_IP[]" 			value="192.168.1.129"/>192.168.1.129</tdh>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_MacAddress_1" 		name="pmitem_MacAddress[]" 	value="4c:ed:de:e8:7e:73"/>4c:ed:de:e8:7e:73</td>
+					<td width="150 "style="background:#FFFFFF" align="center"><input  style="display:none" type="text"   id="pmitem_Description_1" 	name="pmitem_Description[]" value="" maxlength="100"/><span id="label_pmitem_Description_1"></span></td>
+					<td style="background:#FFFFFF" align="center"><select style="display:none" id="pmitem_Protocol_1" name="pmitem_Protocol[]"><option label="TCP" value="TCP" selected="selected">TCP</option>
+<option label="UDP" value="UDP">UDP</option>
+</select><span id="label_pmitem_Protocol_1" >TCP</span></td>
+					<td style="background:#FFFFFF" align="center"><input style="display:none" type="text"   id="pmitem_InternalPort_1" 	name="pmitem_InternalPort[]" value="4663" size="5" maxlength="5"/><span id="label_pmitem_InternalPort_1">4663</span></td>
+					<td style="background:#FFFFFF" align="center"><input style="display:none" type="text"   id="pmitem_ExternalPort_1" 	name="pmitem_ExternalPort[]" value="4663" size="5" maxlength="5"/><span id="label_pmitem_ExternalPort_1">4663</span></td>
+					<td style="background:#FFFFFF" align="center"><img src="../../templates/cfg-ngrg/images/trafficlights_green.jpg" /></td>
+					<td style="background:#FFFFFF" align="center">
+					<span id="labelActionEdit_1"><a href="javascript:void(removeItem(1))">Rimuovi</a>&nbsp;<a href="javascript:void(editItem(1))">Modifica</a></span>
+					<span id="labelActionSave_1" style="display:none"><a href="javascript:void(undoEditItem(1))">Annulla</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(updateItem(1))">Salva</a></span>
+					</th>
+				</tr>
+								<tr>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_ID_2" 				name="pmitem_ID[]" 			value="2"/>2</td>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_IP_2" 				name="pmitem_IP[]" 			value="192.168.1.129"/>192.168.1.129</tdh>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_MacAddress_2" 		name="pmitem_MacAddress[]" 	value="4c:ed:de:e8:7e:73"/>4c:ed:de:e8:7e:73</td>
+					<td width="150 "style="background:#FFFFFF" align="center"><input  style="display:none" type="text"   id="pmitem_Description_2" 	name="pmitem_Description[]" value="" maxlength="100"/><span id="label_pmitem_Description_2"></span></td>
+					<td style="background:#FFFFFF" align="center"><select style="display:none" id="pmitem_Protocol_2" name="pmitem_Protocol[]"><option label="TCP" value="TCP">TCP</option>
+<option label="UDP" value="UDP" selected="selected">UDP</option>
+</select><span id="label_pmitem_Protocol_2" >UDP</span></td>
+					<td style="background:#FFFFFF" align="center"><input style="display:none" type="text"   id="pmitem_InternalPort_2" 	name="pmitem_InternalPort[]" value="4673" size="5" maxlength="5"/><span id="label_pmitem_InternalPort_2">4673</span></td>
+					<td style="background:#FFFFFF" align="center"><input style="display:none" type="text"   id="pmitem_ExternalPort_2" 	name="pmitem_ExternalPort[]" value="4673" size="5" maxlength="5"/><span id="label_pmitem_ExternalPort_2">4673</span></td>
+					<td style="background:#FFFFFF" align="center"><img src="../../templates/cfg-ngrg/images/trafficlights_green.jpg" /></td>
+					<td style="background:#FFFFFF" align="center">
+					<span id="labelActionEdit_2"><a href="javascript:void(removeItem(2))">Rimuovi</a>&nbsp;<a href="javascript:void(editItem(2))">Modifica</a></span>
+					<span id="labelActionSave_2" style="display:none"><a href="javascript:void(undoEditItem(2))">Annulla</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(updateItem(2))">Salva</a></span>
+					</th>
+				</tr>
+								<tr>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_ID_3" 				name="pmitem_ID[]" 			value="3"/>3</td>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_IP_3" 				name="pmitem_IP[]" 			value="192.168.1.129"/>192.168.1.129</tdh>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_MacAddress_3" 		name="pmitem_MacAddress[]" 	value="4c:ed:de:e8:7e:73"/>4c:ed:de:e8:7e:73</td>
+					<td width="150 "style="background:#FFFFFF" align="center"><input  style="display:none" type="text"   id="pmitem_Description_3" 	name="pmitem_Description[]" value="" maxlength="100"/><span id="label_pmitem_Description_3"></span></td>
+					<td style="background:#FFFFFF" align="center"><select style="display:none" id="pmitem_Protocol_3" name="pmitem_Protocol[]"><option label="TCP" value="TCP" selected="selected">TCP</option>
+<option label="UDP" value="UDP">UDP</option>
+</select><span id="label_pmitem_Protocol_3" >TCP</span></td>
+					<td style="background:#FFFFFF" align="center"><input style="display:none" type="text"   id="pmitem_InternalPort_3" 	name="pmitem_InternalPort[]" value="6882" size="5" maxlength="5"/><span id="label_pmitem_InternalPort_3">6882</span></td>
+					<td style="background:#FFFFFF" align="center"><input style="display:none" type="text"   id="pmitem_ExternalPort_3" 	name="pmitem_ExternalPort[]" value="6882" size="5" maxlength="5"/><span id="label_pmitem_ExternalPort_3">6882</span></td>
+					<td style="background:#FFFFFF" align="center"><img src="../../templates/cfg-ngrg/images/trafficlights_green.jpg" /></td>
+					<td style="background:#FFFFFF" align="center">
+					<span id="labelActionEdit_3"><a href="javascript:void(removeItem(3))">Rimuovi</a>&nbsp;<a href="javascript:void(editItem(3))">Modifica</a></span>
+					<span id="labelActionSave_3" style="display:none"><a href="javascript:void(undoEditItem(3))">Annulla</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(updateItem(3))">Salva</a></span>
+					</th>
+				</tr>
+								<tr>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_ID_4" 				name="pmitem_ID[]" 			value="4"/>4</td>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_IP_4" 				name="pmitem_IP[]" 			value="192.168.1.130"/>192.168.1.130</tdh>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_MacAddress_4" 		name="pmitem_MacAddress[]" 	value="04:f7:e4:b6:0a:fb"/>04:f7:e4:b6:0a:fb</td>
+					<td width="150 "style="background:#FFFFFF" align="center"><input  style="display:none" type="text"   id="pmitem_Description_4" 	name="pmitem_Description[]" value="" maxlength="100"/><span id="label_pmitem_Description_4"></span></td>
+					<td style="background:#FFFFFF" align="center"><select style="display:none" id="pmitem_Protocol_4" name="pmitem_Protocol[]"><option label="TCP" value="TCP" selected="selected">TCP</option>
+<option label="UDP" value="UDP">UDP</option>
+</select><span id="label_pmitem_Protocol_4" >TCP</span></td>
+					<td style="background:#FFFFFF" align="center"><input style="display:none" type="text"   id="pmitem_InternalPort_4" 	name="pmitem_InternalPort[]" value="4664" size="5" maxlength="5"/><span id="label_pmitem_InternalPort_4">4664</span></td>
+					<td style="background:#FFFFFF" align="center"><input style="display:none" type="text"   id="pmitem_ExternalPort_4" 	name="pmitem_ExternalPort[]" value="4664" size="5" maxlength="5"/><span id="label_pmitem_ExternalPort_4">4664</span></td>
+					<td style="background:#FFFFFF" align="center"><img src="../../templates/cfg-ngrg/images/trafficlights_green.jpg" /></td>
+					<td style="background:#FFFFFF" align="center">
+					<span id="labelActionEdit_4"><a href="javascript:void(removeItem(4))">Rimuovi</a>&nbsp;<a href="javascript:void(editItem(4))">Modifica</a></span>
+					<span id="labelActionSave_4" style="display:none"><a href="javascript:void(undoEditItem(4))">Annulla</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(updateItem(4))">Salva</a></span>
+					</th>
+				</tr>
+								<tr>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_ID_5" 				name="pmitem_ID[]" 			value="5"/>5</td>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_IP_5" 				name="pmitem_IP[]" 			value="192.168.1.130"/>192.168.1.130</tdh>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_MacAddress_5" 		name="pmitem_MacAddress[]" 	value="04:f7:e4:b6:0a:fb"/>04:f7:e4:b6:0a:fb</td>
+					<td width="150 "style="background:#FFFFFF" align="center"><input  style="display:none" type="text"   id="pmitem_Description_5" 	name="pmitem_Description[]" value="" maxlength="100"/><span id="label_pmitem_Description_5"></span></td>
+					<td style="background:#FFFFFF" align="center"><select style="display:none" id="pmitem_Protocol_5" name="pmitem_Protocol[]"><option label="TCP" value="TCP">TCP</option>
+<option label="UDP" value="UDP" selected="selected">UDP</option>
+</select><span id="label_pmitem_Protocol_5" >UDP</span></td>
+					<td style="background:#FFFFFF" align="center"><input style="display:none" type="text"   id="pmitem_InternalPort_5" 	name="pmitem_InternalPort[]" value="4674" size="5" maxlength="5"/><span id="label_pmitem_InternalPort_5">4674</span></td>
+					<td style="background:#FFFFFF" align="center"><input style="display:none" type="text"   id="pmitem_ExternalPort_5" 	name="pmitem_ExternalPort[]" value="4674" size="5" maxlength="5"/><span id="label_pmitem_ExternalPort_5">4674</span></td>
+					<td style="background:#FFFFFF" align="center"><img src="../../templates/cfg-ngrg/images/trafficlights_green.jpg" /></td>
+					<td style="background:#FFFFFF" align="center">
+					<span id="labelActionEdit_5"><a href="javascript:void(removeItem(5))">Rimuovi</a>&nbsp;<a href="javascript:void(editItem(5))">Modifica</a></span>
+					<span id="labelActionSave_5" style="display:none"><a href="javascript:void(undoEditItem(5))">Annulla</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(updateItem(5))">Salva</a></span>
+					</th>
+				</tr>
+								<tr>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_ID_6" 				name="pmitem_ID[]" 			value="6"/>6</td>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_IP_6" 				name="pmitem_IP[]" 			value="192.168.1.130"/>192.168.1.130</tdh>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_MacAddress_6" 		name="pmitem_MacAddress[]" 	value="04:f7:e4:b6:0a:fb"/>04:f7:e4:b6:0a:fb</td>
+					<td width="150 "style="background:#FFFFFF" align="center"><input  style="display:none" type="text"   id="pmitem_Description_6" 	name="pmitem_Description[]" value="" maxlength="100"/><span id="label_pmitem_Description_6"></span></td>
+					<td style="background:#FFFFFF" align="center"><select style="display:none" id="pmitem_Protocol_6" name="pmitem_Protocol[]"><option label="TCP" value="TCP" selected="selected">TCP</option>
+<option label="UDP" value="UDP">UDP</option>
+</select><span id="label_pmitem_Protocol_6" >TCP</span></td>
+					<td style="background:#FFFFFF" align="center"><input style="display:none" type="text"   id="pmitem_InternalPort_6" 	name="pmitem_InternalPort[]" value="6883" size="5" maxlength="5"/><span id="label_pmitem_InternalPort_6">6883</span></td>
+					<td style="background:#FFFFFF" align="center"><input style="display:none" type="text"   id="pmitem_ExternalPort_6" 	name="pmitem_ExternalPort[]" value="6883" size="5" maxlength="5"/><span id="label_pmitem_ExternalPort_6">6883</span></td>
+					<td style="background:#FFFFFF" align="center"><img src="../../templates/cfg-ngrg/images/trafficlights_green.jpg" /></td>
+					<td style="background:#FFFFFF" align="center">
+					<span id="labelActionEdit_6"><a href="javascript:void(removeItem(6))">Rimuovi</a>&nbsp;<a href="javascript:void(editItem(6))">Modifica</a></span>
+					<span id="labelActionSave_6" style="display:none"><a href="javascript:void(undoEditItem(6))">Annulla</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(updateItem(6))">Salva</a></span>
+					</th>
+				</tr>
+								<tr>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_ID_7" 				name="pmitem_ID[]" 			value="7"/>7</td>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_IP_7" 				name="pmitem_IP[]" 			value="192.168.1.131"/>192.168.1.131</tdh>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_MacAddress_7" 		name="pmitem_MacAddress[]" 	value="7c:61:93:ef:22:06"/>7c:61:93:ef:22:06</td>
+					<td width="150 "style="background:#FFFFFF" align="center"><input  style="display:none" type="text"   id="pmitem_Description_7" 	name="pmitem_Description[]" value="" maxlength="100"/><span id="label_pmitem_Description_7"></span></td>
+					<td style="background:#FFFFFF" align="center"><select style="display:none" id="pmitem_Protocol_7" name="pmitem_Protocol[]"><option label="TCP" value="TCP" selected="selected">TCP</option>
+<option label="UDP" value="UDP">UDP</option>
+</select><span id="label_pmitem_Protocol_7" >TCP</span></td>
+					<td style="background:#FFFFFF" align="center"><input style="display:none" type="text"   id="pmitem_InternalPort_7" 	name="pmitem_InternalPort[]" value="4665" size="5" maxlength="5"/><span id="label_pmitem_InternalPort_7">4665</span></td>
+					<td style="background:#FFFFFF" align="center"><input style="display:none" type="text"   id="pmitem_ExternalPort_7" 	name="pmitem_ExternalPort[]" value="4665" size="5" maxlength="5"/><span id="label_pmitem_ExternalPort_7">4665</span></td>
+					<td style="background:#FFFFFF" align="center"><img src="../../templates/cfg-ngrg/images/trafficlights_green.jpg" /></td>
+					<td style="background:#FFFFFF" align="center">
+					<span id="labelActionEdit_7"><a href="javascript:void(removeItem(7))">Rimuovi</a>&nbsp;<a href="javascript:void(editItem(7))">Modifica</a></span>
+					<span id="labelActionSave_7" style="display:none"><a href="javascript:void(undoEditItem(7))">Annulla</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(updateItem(7))">Salva</a></span>
+					</th>
+				</tr>
+								<tr>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_ID_8" 				name="pmitem_ID[]" 			value="8"/>8</td>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_IP_8" 				name="pmitem_IP[]" 			value="192.168.1.131"/>192.168.1.131</tdh>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_MacAddress_8" 		name="pmitem_MacAddress[]" 	value="7c:61:93:ef:22:06"/>7c:61:93:ef:22:06</td>
+					<td width="150 "style="background:#FFFFFF" align="center"><input  style="display:none" type="text"   id="pmitem_Description_8" 	name="pmitem_Description[]" value="" maxlength="100"/><span id="label_pmitem_Description_8"></span></td>
+					<td style="background:#FFFFFF" align="center"><select style="display:none" id="pmitem_Protocol_8" name="pmitem_Protocol[]"><option label="TCP" value="TCP">TCP</option>
+<option label="UDP" value="UDP" selected="selected">UDP</option>
+</select><span id="label_pmitem_Protocol_8" >UDP</span></td>
+					<td style="background:#FFFFFF" align="center"><input style="display:none" type="text"   id="pmitem_InternalPort_8" 	name="pmitem_InternalPort[]" value="4675" size="5" maxlength="5"/><span id="label_pmitem_InternalPort_8">4675</span></td>
+					<td style="background:#FFFFFF" align="center"><input style="display:none" type="text"   id="pmitem_ExternalPort_8" 	name="pmitem_ExternalPort[]" value="4675" size="5" maxlength="5"/><span id="label_pmitem_ExternalPort_8">4675</span></td>
+					<td style="background:#FFFFFF" align="center"><img src="../../templates/cfg-ngrg/images/trafficlights_green.jpg" /></td>
+					<td style="background:#FFFFFF" align="center">
+					<span id="labelActionEdit_8"><a href="javascript:void(removeItem(8))">Rimuovi</a>&nbsp;<a href="javascript:void(editItem(8))">Modifica</a></span>
+					<span id="labelActionSave_8" style="display:none"><a href="javascript:void(undoEditItem(8))">Annulla</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(updateItem(8))">Salva</a></span>
+					</th>
+				</tr>
+								<tr>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_ID_9" 				name="pmitem_ID[]" 			value="9"/>9</td>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_IP_9" 				name="pmitem_IP[]" 			value="192.168.1.131"/>192.168.1.131</tdh>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_MacAddress_9" 		name="pmitem_MacAddress[]" 	value="7c:61:93:ef:22:06"/>7c:61:93:ef:22:06</td>
+					<td width="150 "style="background:#FFFFFF" align="center"><input  style="display:none" type="text"   id="pmitem_Description_9" 	name="pmitem_Description[]" value="" maxlength="100"/><span id="label_pmitem_Description_9"></span></td>
+					<td style="background:#FFFFFF" align="center"><select style="display:none" id="pmitem_Protocol_9" name="pmitem_Protocol[]"><option label="TCP" value="TCP" selected="selected">TCP</option>
+<option label="UDP" value="UDP">UDP</option>
+</select><span id="label_pmitem_Protocol_9" >TCP</span></td>
+					<td style="background:#FFFFFF" align="center"><input style="display:none" type="text"   id="pmitem_InternalPort_9" 	name="pmitem_InternalPort[]" value="6884" size="5" maxlength="5"/><span id="label_pmitem_InternalPort_9">6884</span></td>
+					<td style="background:#FFFFFF" align="center"><input style="display:none" type="text"   id="pmitem_ExternalPort_9" 	name="pmitem_ExternalPort[]" value="6884" size="5" maxlength="5"/><span id="label_pmitem_ExternalPort_9">6884</span></td>
+					<td style="background:#FFFFFF" align="center"><img src="../../templates/cfg-ngrg/images/trafficlights_green.jpg" /></td>
+					<td style="background:#FFFFFF" align="center">
+					<span id="labelActionEdit_9"><a href="javascript:void(removeItem(9))">Rimuovi</a>&nbsp;<a href="javascript:void(editItem(9))">Modifica</a></span>
+					<span id="labelActionSave_9" style="display:none"><a href="javascript:void(undoEditItem(9))">Annulla</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(updateItem(9))">Salva</a></span>
+					</th>
+				</tr>
+								<tr>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_ID_10" 				name="pmitem_ID[]" 			value="10"/>10</td>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_IP_10" 				name="pmitem_IP[]" 			value="192.168.1.129"/>192.168.1.129</tdh>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_MacAddress_10" 		name="pmitem_MacAddress[]" 	value="4c:ed:de:e8:7e:73"/>4c:ed:de:e8:7e:73</td>
+					<td width="150 "style="background:#FFFFFF" align="center"><input  style="display:none" type="text"   id="pmitem_Description_10" 	name="pmitem_Description[]" value="" maxlength="100"/><span id="label_pmitem_Description_10"></span></td>
+					<td style="background:#FFFFFF" align="center"><select style="display:none" id="pmitem_Protocol_10" name="pmitem_Protocol[]"><option label="TCP" value="TCP" selected="selected">TCP</option>
+<option label="UDP" value="UDP">UDP</option>
+</select><span id="label_pmitem_Protocol_10" >TCP</span></td>
+					<td style="background:#FFFFFF" align="center"><input style="display:none" type="text"   id="pmitem_InternalPort_10" 	name="pmitem_InternalPort[]" value="7000" size="5" maxlength="5"/><span id="label_pmitem_InternalPort_10">7000</span></td>
+					<td style="background:#FFFFFF" align="center"><input style="display:none" type="text"   id="pmitem_ExternalPort_10" 	name="pmitem_ExternalPort[]" value="7000" size="5" maxlength="5"/><span id="label_pmitem_ExternalPort_10">7000</span></td>
+					<td style="background:#FFFFFF" align="center"><img src="../../templates/cfg-ngrg/images/trafficlights_green.jpg" /></td>
+					<td style="background:#FFFFFF" align="center">
+					<span id="labelActionEdit_10"><a href="javascript:void(removeItem(10))">Rimuovi</a>&nbsp;<a href="javascript:void(editItem(10))">Modifica</a></span>
+					<span id="labelActionSave_10" style="display:none"><a href="javascript:void(undoEditItem(10))">Annulla</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(updateItem(10))">Salva</a></span>
+					</th>
+				</tr>
+								<tr>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_ID_11" 				name="pmitem_ID[]" 			value="11"/>11</td>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_IP_11" 				name="pmitem_IP[]" 			value="192.168.1.129"/>192.168.1.129</tdh>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_MacAddress_11" 		name="pmitem_MacAddress[]" 	value="4c:ed:de:e8:7e:73"/>4c:ed:de:e8:7e:73</td>
+					<td width="150 "style="background:#FFFFFF" align="center"><input  style="display:none" type="text"   id="pmitem_Description_11" 	name="pmitem_Description[]" value="" maxlength="100"/><span id="label_pmitem_Description_11"></span></td>
+					<td style="background:#FFFFFF" align="center"><select style="display:none" id="pmitem_Protocol_11" name="pmitem_Protocol[]"><option label="TCP" value="TCP" selected="selected">TCP</option>
+<option label="UDP" value="UDP">UDP</option>
+</select><span id="label_pmitem_Protocol_11" >TCP</span></td>
+					<td style="background:#FFFFFF" align="center"><input style="display:none" type="text"   id="pmitem_InternalPort_11" 	name="pmitem_InternalPort[]" value="7001" size="5" maxlength="5"/><span id="label_pmitem_InternalPort_11">7001</span></td>
+					<td style="background:#FFFFFF" align="center"><input style="display:none" type="text"   id="pmitem_ExternalPort_11" 	name="pmitem_ExternalPort[]" value="7001" size="5" maxlength="5"/><span id="label_pmitem_ExternalPort_11">7001</span></td>
+					<td style="background:#FFFFFF" align="center"><img src="../../templates/cfg-ngrg/images/trafficlights_green.jpg" /></td>
+					<td style="background:#FFFFFF" align="center">
+					<span id="labelActionEdit_11"><a href="javascript:void(removeItem(11))">Rimuovi</a>&nbsp;<a href="javascript:void(editItem(11))">Modifica</a></span>
+					<span id="labelActionSave_11" style="display:none"><a href="javascript:void(undoEditItem(11))">Annulla</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(updateItem(11))">Salva</a></span>
+					</th>
+				</tr>
+								<tr>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_ID_12" 				name="pmitem_ID[]" 			value="12"/>12</td>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_IP_12" 				name="pmitem_IP[]" 			value="192.168.1.129"/>192.168.1.129</tdh>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_MacAddress_12" 		name="pmitem_MacAddress[]" 	value="4c:ed:de:e8:7e:73"/>4c:ed:de:e8:7e:73</td>
+					<td width="150 "style="background:#FFFFFF" align="center"><input  style="display:none" type="text"   id="pmitem_Description_12" 	name="pmitem_Description[]" value="" maxlength="100"/><span id="label_pmitem_Description_12"></span></td>
+					<td style="background:#FFFFFF" align="center"><select style="display:none" id="pmitem_Protocol_12" name="pmitem_Protocol[]"><option label="TCP" value="TCP" selected="selected">TCP</option>
+<option label="UDP" value="UDP">UDP</option>
+</select><span id="label_pmitem_Protocol_12" >TCP</span></td>
+					<td style="background:#FFFFFF" align="center"><input style="display:none" type="text"   id="pmitem_InternalPort_12" 	name="pmitem_InternalPort[]" value="7003" size="5" maxlength="5"/><span id="label_pmitem_InternalPort_12">7003</span></td>
+					<td style="background:#FFFFFF" align="center"><input style="display:none" type="text"   id="pmitem_ExternalPort_12" 	name="pmitem_ExternalPort[]" value="7003" size="5" maxlength="5"/><span id="label_pmitem_ExternalPort_12">7003</span></td>
+					<td style="background:#FFFFFF" align="center"><img src="../../templates/cfg-ngrg/images/trafficlights_green.jpg" /></td>
+					<td style="background:#FFFFFF" align="center">
+					<span id="labelActionEdit_12"><a href="javascript:void(removeItem(12))">Rimuovi</a>&nbsp;<a href="javascript:void(editItem(12))">Modifica</a></span>
+					<span id="labelActionSave_12" style="display:none"><a href="javascript:void(undoEditItem(12))">Annulla</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(updateItem(12))">Salva</a></span>
+					</th>
+				</tr>
+								<tr>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_ID_13" 				name="pmitem_ID[]" 			value="13"/>13</td>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_IP_13" 				name="pmitem_IP[]" 			value="192.168.1.129"/>192.168.1.129</tdh>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_MacAddress_13" 		name="pmitem_MacAddress[]" 	value="4c:ed:de:e8:7e:73"/>4c:ed:de:e8:7e:73</td>
+					<td width="150 "style="background:#FFFFFF" align="center"><input  style="display:none" type="text"   id="pmitem_Description_13" 	name="pmitem_Description[]" value="" maxlength="100"/><span id="label_pmitem_Description_13"></span></td>
+					<td style="background:#FFFFFF" align="center"><select style="display:none" id="pmitem_Protocol_13" name="pmitem_Protocol[]"><option label="TCP" value="TCP" selected="selected">TCP</option>
+<option label="UDP" value="UDP">UDP</option>
+</select><span id="label_pmitem_Protocol_13" >TCP</span></td>
+					<td style="background:#FFFFFF" align="center"><input style="display:none" type="text"   id="pmitem_InternalPort_13" 	name="pmitem_InternalPort[]" value="7002" size="5" maxlength="5"/><span id="label_pmitem_InternalPort_13">7002</span></td>
+					<td style="background:#FFFFFF" align="center"><input style="display:none" type="text"   id="pmitem_ExternalPort_13" 	name="pmitem_ExternalPort[]" value="7002" size="5" maxlength="5"/><span id="label_pmitem_ExternalPort_13">7002</span></td>
+					<td style="background:#FFFFFF" align="center"><img src="../../templates/cfg-ngrg/images/trafficlights_green.jpg" /></td>
+					<td style="background:#FFFFFF" align="center">
+					<span id="labelActionEdit_13"><a href="javascript:void(removeItem(13))">Rimuovi</a>&nbsp;<a href="javascript:void(editItem(13))">Modifica</a></span>
+					<span id="labelActionSave_13" style="display:none"><a href="javascript:void(undoEditItem(13))">Annulla</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(updateItem(13))">Salva</a></span>
+					</th>
+				</tr>
+								<tr>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_ID_14" 				name="pmitem_ID[]" 			value="14"/>14</td>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_IP_14" 				name="pmitem_IP[]" 			value="192.168.1.129"/>192.168.1.129</tdh>
+					<td style="background:#FFFFFF" align="center"><input type="hidden" id="pmitem_MacAddress_14" 		name="pmitem_MacAddress[]" 	value="4c:ed:de:e8:7e:73"/>4c:ed:de:e8:7e:73</td>
+					<td width="150 "style="background:#FFFFFF" align="center"><input  style="display:none" type="text"   id="pmitem_Description_14" 	name="pmitem_Description[]" value="" maxlength="100"/><span id="label_pmitem_Description_14"></span></td>
+					<td style="background:#FFFFFF" align="center"><select style="display:none" id="pmitem_Protocol_14" name="pmitem_Protocol[]"><option label="TCP" value="TCP" selected="selected">TCP</option>
+<option label="UDP" value="UDP">UDP</option>
+</select><span id="label_pmitem_Protocol_14" >TCP</span></td>
+					<td style="background:#FFFFFF" align="center"><input style="display:none" type="text"   id="pmitem_InternalPort_14" 	name="pmitem_InternalPort[]" value="7004" size="5" maxlength="5"/><span id="label_pmitem_InternalPort_14">7004</span></td>
+					<td style="background:#FFFFFF" align="center"><input style="display:none" type="text"   id="pmitem_ExternalPort_14" 	name="pmitem_ExternalPort[]" value="7004" size="5" maxlength="5"/><span id="label_pmitem_ExternalPort_14">7004</span></td>
+					<td style="background:#FFFFFF" align="center"><img src="../../templates/cfg-ngrg/images/trafficlights_green.jpg" /></td>
+					<td style="background:#FFFFFF" align="center">
+					<span id="labelActionEdit_14"><a href="javascript:void(removeItem(14))">Rimuovi</a>&nbsp;<a href="javascript:void(editItem(14))">Modifica</a></span>
+					<span id="labelActionSave_14" style="display:none"><a href="javascript:void(undoEditItem(14))">Annulla</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(updateItem(14))">Salva</a></span>
+					</th>
+				</tr>
+								
+				
+								<tr id="tr_pmitem_new" style="visibility:hidden">
+					<td style="background:#FFFFFF" align="center">&nbsp;</td>
+					<td style="background:#FFFFFF" align="center"><select id="pmitem_IP_new" name="pmitem_IP_new"><option label="192.168.1.129" value="192.168.1.129">192.168.1.129</option>
+<option label="192.168.1.130" value="192.168.1.130">192.168.1.130</option>
+<option label="192.168.1.131" value="192.168.1.131">192.168.1.131</option>
+</select></tdh>
+					<td style="background:#FFFFFF" align="center">&nbsp;</td>
+					<td width="150" style="background:#FFFFFF" align="center"><input  type="text"   id="pmitem_Description_new" 	name="pmitem_Description_new" value="" maxlength="100"/></td>
+					<td style="background:#FFFFFF" align="center"><select id="pmitem_Protocol_new" name="pmitem_Protocol_new"><option label="TCP" value="TCP">TCP</option>
+<option label="UDP" value="UDP">UDP</option>
+</select></td>
+					<td style="background:#FFFFFF" align="center"><input type="text"   id="pmitem_InternalPort_new" 	name="pmitem_InternalPort_new" value="" size="5" maxlength="5"/></td>
+					<td style="background:#FFFFFF" align="center"><input type="text"   id="pmitem_ExternalPort_new" 	name="pmitem_ExternalPort_new" value="" size="5" maxlength="5"/></td>
+					<td style="background:#FFFFFF" align="center">&nbsp;</td>
+					<td style="background:#FFFFFF" align="center">
+					<span id="labelActionSave_new"><a href="javascript:void(undoAddItem())">Annulla</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(doAddItem())">Salva</a></span>
+					</th>
+				</tr>
+								
+				
+				</tbody>
+				</table>
+				</div>
+				
+								<table class="pagina_interna" border="0" id="labelActionAddItem">
+				<tr>
+				<td align="left">
+		        	<div id="menuRow" style="text-align:left">
+		        		<a href="javascript:void(addItem());">Aggiungi PortMapping</a> &nbsp;<img src='../../templates/cfg-ngrg/images/help.jpg' onmouseover="document.getElementById('div_help').style.visibility='visible';" onmouseout="document.getElementById('div_help').style.visibility='hidden';">
+		        		<p id="div_help" style="visibility:hidden;background-color:orange;color:white">
+		        		Il port mapping consente il trasferimento dei dati da un computer ad un altro tramite una specifica porta di comunicazione.</p>
+			    	</div>
+		 		</td>
+	 			</tr>
+	 			</table>
+	 							
+			</table>
+			<!----------------------------------------------------------------------------------------------------------->
+
+		<!-- ##### FINE RIEPILOGO RICHIESTA ##### //-->
+	    </td>
+	  </tr>
+	  <tr>
+		<td align="center">
+		        <div id="menuRow" style="padding-top:3px;">
+			    	<a href="javascript:void(0);" onClick="StepValue('2'); return false;" id="avanti"><img src='../../templates/common/images/mvno/bottone_indietro.gif'></a>
+			    </div>
+		 </td>
+	 </tr>
+	  	</table>
+	<!---------------------------------------------------------------------->
+
+	</form>
+</div>
+
+<div id="overlay"></div>
+<div id="c-1" name="c-1" onmouseover="this.onmousedown=dragIsDown;" ondragstart="return false;" onselectstart="return false;">
+	<div id="divUno"></div>
+</div>
+
+</div>
+
+<div class="piedino">
+	<a href="javascript:void();" title="Chiudi la finestra" onClick="window.parent.close(); return false;"><div class="chiudi">&nbsp;</div></a>
+</div>
+	
+	<!-- START Nielsen//NetRatings SiteCensus V5.2 -->
+	<!-- COPYRIGHT 2006 Nielsen//NetRatings -->
+	<script type="text/javascript">
+		var _rsCI="fastweb-it";
+		var _rsCG="0";
+		var _rsDN="//secure-it.imrworldwide.com/";
+		var _rsCC=0;
+		var _rsIP=1;
+	</script>
+	<script type="text/javascript" src="//secure-it.imrworldwide.com/v52.js"></script>
+	<noscript>
+		<img src="//secure-it.imrworldwide.com/cgi-bin/m?ci=fastweb-it&amp;cg=0" style="display:none" alt=""/>
+	</noscript>
+	<!-- END Nielsen//NetRatings SiteCensus V5.2 -->
+
+</body>

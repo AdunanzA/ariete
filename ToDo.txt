@@ -1,0 +1,11 @@
+Launcher eMule
+1. Ridisegnare il launcher
+2. Procedura manuale mfp
+3. Sostituire ClickOne con Shimmer
+4. Merge dll per evitare dotnet? 
+5. Test di velocita' linea?
+> 7. Bug assenza emuleadu
+  7.1 Bug reference null con tutti gli errori exitfails da debugger
+8. aggiornamento da 3.16
+9 sistema di submit dei log pastbin?
+10. Se non si avvia emule almeno una volta non crea la config ed ariete non lo rileva??

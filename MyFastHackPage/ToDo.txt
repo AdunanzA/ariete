@@ -1,0 +1,11 @@
+﻿### TODO List
+* Implementare nuovo schema mind
+* 
+
+* Cercare tutti i range Fastweb nel database RIPE: https://apps.db.ripe.net/search/query.html
+* Testare su linea fastweb 93
+* Aggiungere procedure di apertura porta specifica
+* Rendere esportabile il codice in una lib
+* Testare il codice sotto linux/mono con moma
+* Scrivere documentazione
+
